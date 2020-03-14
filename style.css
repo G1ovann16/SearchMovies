@@ -1,16 +1,43 @@
-
+.wrap{
+    background-color: black;
+    z-index: -1;
+}
 .title{
-    color: aqua;
-    
-    }
-    #titulo{
-        width: 20%;
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 10px;
-    
-    }
-    
-    
+color: whitesmoke;
+
+}
+.btn-sm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+    width: 100%;
+    margin: 15px;
+}
+
+#titulo{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+H1{
+    text-align: center;
+    color: antiquewhite;
+}
+.footer > ul{
+list-style-type: none;
+font-size: 40px;
+height: 10vh;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.footer > ul{
+   background-color:whitesmoke;
+}
