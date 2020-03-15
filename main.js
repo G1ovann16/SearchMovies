@@ -99,32 +99,3 @@ function buscar() {
     }
   })
 }
-
-
-// sort
-// for (let i = 0; i < movies.length; i++) {
-//     for (let j = i; j < movies.length-1; j++)
-//        {if (movies[i].popularity < movies[j])
-//         temp=movies[i].popularity;
-//         movies[i].popularity=movies[j].popularity;
-//         movies[j].popularity=temp;
-//        }
-//     }
-//     for (let i = 0; i < movies.length; i++)                    
-//        { console.log(movies[i].popularity);}
-// function sort_rated(){
-//     axios({
-//         method: 'GET',
-//         url: `https://api.themoviedb.org/3/search/movie?api_key=cea68b520beecac6718820e4ac576c3a&vi&language=es-ES&query=${search}}`
-//     }).then(res => {
-//         let movies = res.data.results;
-//         movies= movies.vote_average;
-//         for (let i = 0;  i< movies.length; i++) {
-
-//             search_Rated += `<p>${movies[i].vote_average}</p>`;
-
-//         }
-//         document.getElementById('overview').innerHTML = search_Rated;
-//     })
-
-// }
