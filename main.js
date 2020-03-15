@@ -44,14 +44,16 @@ function buscar(){
             }  
                 filmsToSearch='';                
                for (let i = 6;  i< 12; i++) {
-                if (search.length > 1)   
+                if (search.length > 1) {
+                  console.log(search.length)  
                 if(movies[i].poster_path!=null){
                 filmsToSearch += `<img src="${urlImagen}${movies[i].poster_path}">
                 <p class="title">${movies[i].title}</p>`;
                     document.getElementById('Second').innerHTML = filmsToSearch;
                     
                    }      
-                }
+                  }
+                  }
                    filmsToSearch='';                
                    for (let i = 12;  i< 19; i++) {
                     if (search.length > 1) 
