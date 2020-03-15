@@ -35,27 +35,6 @@ function buscar() {
           document.getElementById('carouselExampleIndicators').style.display= "none" ;
           ;
             document.getElementById('First').innerHTML = filmsToSearch;
-<<<<<<< HEAD
-               }
-            }  
-                filmsToSearch='';                
-               for (let i = 6;  i< 12; i++) {
-                if (search.length > 1) {
-                  console.log(search.length)  
-                if(movies[i].poster_path!=null){
-                filmsToSearch += `<img src="${urlImagen}${movies[i].poster_path}">
-                <p class="title">${movies[i].title}</p>`;
-                    document.getElementById('Second').innerHTML = filmsToSearch;
-                    
-                   }      
-                  }
-                  }
-                   filmsToSearch='';                
-                   for (let i = 12;  i< 19; i++) {
-                    if (search.length > 1) 
-                    if(movies[i].poster_path!=null){
-                    filmsToSearch += `<img src="${urlImagen}${movies[i].poster_path}">
-=======
         }
     }else{
       document.getElementById('carouselExampleIndicators').style.display= "block" ;
@@ -85,7 +64,6 @@ function buscar() {
       if (search.length > 1){
         if (movies[i].poster_path != null) {
           filmsToSearch += `<img src="${urlImagen}${movies[i].poster_path}">
->>>>>>> main
                     <p class="title">${movies[i].title}</p>`;
            document.body.style.background="#000";
           document.getElementById('carouselExampleIndicators').style.display= "none" ;
@@ -99,3 +77,5 @@ function buscar() {
     }
   })
 }
+
+
