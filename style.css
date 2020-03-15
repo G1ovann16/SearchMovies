@@ -1,7 +1,8 @@
 .wrap{
-    background-color: black;
-    z-index: -1;
+    /* background-color: black; */
+    height: 100vh;
 }
+
 .title{
 color: whitesmoke;
 
@@ -24,10 +25,16 @@ color: whitesmoke;
     margin: 10px;
 
 }
+
 H1{
     text-align: center;
-    color: antiquewhite;
+    background-color: black;
+    color: whitesmoke;
 }
+.campo{
+    height: 80vh;
+}
+
 .footer > ul{
 list-style-type: none;
 font-size: 40px;
