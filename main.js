@@ -18,7 +18,6 @@ function buscar() {
   if (search.length <= 0) {
     document.getElementById('First').innerHTML = '';
     document.getElementById('Second').innerHTML = '';
-    document.getElementById('Third').innerHTML = '';
   } axios({
     method: 'GET',
     url: `https://api.themoviedb.org/3/search/movie?api_key=cea68b520beecac6718820e4ac576c3a&vi&language=es-ES&query=${search}}`
