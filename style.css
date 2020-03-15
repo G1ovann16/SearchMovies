@@ -15,21 +15,64 @@ color: whitesmoke;
     width: 100%;
     margin: 15px;
 }
-
-#titulo{
-    width: 20%;
-    height: 20%;
+.logo{
+    width: 50px;
+    margin-right: 25rem;
+}
+.logoIndex{
+    width: 50px;
+}
+.title{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 200px;
 
 }
+.post{
+    margin-left: 100px;
+    width: 60%;
+}
+.card{
+    overflow: auto;
+    width: 25vw;
+    height: 20vh;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+    background-color: black;
+    color: whitesmoke;
+}
+
+.card::-webkit-scrollbar{
+    width: 10px;
+    height: 8px;
+}
+.card::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.card::-webkit-scrollbar-thumb:active{
+background-color: #999999;
+}
+
+.card::-webkit-scrollbar-thumb:hover{
+background: #b3b3b3;
+box-shadow: 0 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
 
 H1{
     text-align: center;
     background-color: black;
     color: whitesmoke;
+}
+h2{
+    margin-right: 15rem;
+    color: #b3b3b3;
 }
 .campo{
     height: 80vh;
