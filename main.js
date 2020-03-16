@@ -80,7 +80,7 @@ axios({
   
   function sortPopularity(){
     filmsToSearch = '';
-    let search = "b"; 
+    let search = document.getElementById("query").value;
     document.getElementById('First').innerHTML = '';
     document.getElementById('Second').innerHTML = '';
     axios({
