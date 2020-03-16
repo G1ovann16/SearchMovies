@@ -43,11 +43,11 @@ axios({
           document.body.style.background = "#000";
           document.getElementById('carouselExampleIndicators').style.display = "none";
           document.getElementById('First').innerHTML = filmsToSearch;}
-       else {
-        document.getElementById('carouselExampleIndicators').style.display = "block";
+        }
       }
-    }
-    }
+           else {
+            document.getElementById('carouselExampleIndicators').style.display = "block";
+          }
 
     filmsToSearch = '';
     if (search.length > 1 ){
@@ -65,12 +65,12 @@ axios({
             document.body.style.background = "#000";
             document.getElementById('carouselExampleIndicators').style.display = "none";
             document.getElementById('Second').innerHTML = filmsToSearch;}
-         else {
-          document.getElementById('carouselExampleIndicators').style.display = "block";
+          }
         }
-      }
-      }
-
+        
+        else {
+         document.getElementById('carouselExampleIndicators').style.display = "block";
+       }
       
 
     })
