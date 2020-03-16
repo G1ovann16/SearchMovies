@@ -3,8 +3,9 @@ const button = document.getElementById("btn");
 let count = 5;
 let filmsToSearch = "";
 let overView = "";
-let rated = 0;
 let temp;
+let firstTop =10;
+let secondTop =19;
 
 function changeBackground() {
   let num = Math.ceil(Math.random() * count);
@@ -16,6 +17,7 @@ function changeBackground() {
 
 
 function buscar() {
+  filmsToSearch = '';
   let search = document.getElementById("query").value;  
   if (search.length <= 0) {
     document.getElementById('First').innerHTML = '';
@@ -29,8 +31,9 @@ axios({
   let movies = res.data.results;
 
     if (search.length > 1 ){
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < firstTop; i++) {
         if (movies[i].poster_path != null) {
+          console.log(movies[i],i,movies);
           if (movies[i].overview == "") {
             filmsToSearch += `<img class="post" src="${urlImagen}${movies[i].poster_path}">
             <p class="title">${movies[i].title}</p>
@@ -43,6 +46,9 @@ axios({
           document.body.style.background = "#000";
           document.getElementById('carouselExampleIndicators').style.display = "none";
           document.getElementById('First').innerHTML = filmsToSearch;}
+          else{
+            i++;
+          }
         }
       }
            else {
@@ -51,8 +57,9 @@ axios({
 
     filmsToSearch = '';
     if (search.length > 1 ){
-      for (let i = 10; i < 19; i++) {
+      for (let i = firstTop; i < secondTop; i++) {
           if (movies[i].poster_path != null) {
+            console.log(movies[i],i,movies);
             if (movies[i].overview == "") {
               filmsToSearch += `<img class="post" src="${urlImagen}${movies[i].poster_path}">
               <p class="title">${movies[i].title}</p>
@@ -65,6 +72,9 @@ axios({
             document.body.style.background = "#000";
             document.getElementById('carouselExampleIndicators').style.display = "none";
             document.getElementById('Second').innerHTML = filmsToSearch;}
+            else{
+              i++;
+            }
           }
         }
         
@@ -99,7 +109,7 @@ axios({
        }
      }
     }
-     for (let i = 0; i < 10; i++) {
+     for (let i = 0; i < firstTop; i++) {
       if (movies[i].poster_path != null) {
         if (movies[i].overview == "") {
           filmsToSearch += `<img class="post" src="${urlImagen}${movies[i].poster_path}">
@@ -117,7 +127,7 @@ axios({
       document.getElementById('carouselExampleIndicators').style.display = "block";
     }
   }    filmsToSearch = '';
-     for (let i = 10; i < 19; i++) {
+     for (let i = firstTop; i < secondTop; i++) {
       if (movies[i].poster_path != null) {
         if (movies[i].overview == "") {
           filmsToSearch += `<img class="post" src="${urlImagen}${movies[i].poster_path}">
