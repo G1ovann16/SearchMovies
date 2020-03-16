@@ -120,7 +120,7 @@ axios({
                   <p class="title">${movies[i].title}</p>
                   <div class="card card-body"> ${movies[i].overview} </div>`;
         }
-        document.body.style.background = "#000";
+        document.body.style.background = "#b3b3b3";
         document.getElementById('carouselExampleIndicators').style.display = "none";
         document.getElementById('First').innerHTML = filmsToSearch;}
      else {
